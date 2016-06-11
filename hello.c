@@ -1,7 +1,7 @@
 /* Copyright 2016 by Chris Osborn <fozztexx@fozztexx.com>
  * http://insentricity.com
  *
- * $Id$
+ * Minimal hello world that uses a function to call CP/M BDOS to print a string
  */
 
 void print(const char *const str);
@@ -9,7 +9,7 @@ void print(const char *const str);
 main()
 {
   print("Hello world$");
-  return 1;
+  return 0;
 }
 
 void print(const char *const str)
@@ -22,4 +22,3 @@ void print(const char *const str)
     call 5
   __endasm;
 }
-
